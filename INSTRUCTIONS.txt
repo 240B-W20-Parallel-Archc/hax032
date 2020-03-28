@@ -1,0 +1,4 @@
+The program uses multithread framework called OpenMP which is not supported yet for mac default g++ compiler.
+To compile the program, user need to install omp lib using "brew install libomp". Then install llvm using "brew install llvm".
+Go to https://stackoverflow.com/questions/43555410/enable-openmp-support-in-clang-in-mac-os-x-sierra-mojave for specific instruction. 
+The user also need to make sure the #include omp.h has the correct path to that file in CacheAcess.cpp's include section.
